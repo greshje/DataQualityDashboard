@@ -12,26 +12,23 @@
 rm(list=ls())    
 
 # local files
-pathToDriver <- "C:\\temp\\polites\\drivers\\postgres"
-outputFolder <- "C:\\temp\\polites\\dqd\\output"
-outputFile <- "dqd-results.json"
-
-# cdm version
-cdmVersion = "5.3"
+pathToDriver <- "C:\\temp\\polites\\drivers\\sqlserver"   # location of the mssql-jdbc driver jar
+outputFolder <- "C:\\temp\\polites\\dqd\\output"          # location where output file will be written
+outputFile <- "dqd-results.json"                          # file for results json
 
 # database connectivity
-dbms <- "postgresql"
-user <- "postgres" 
-password <- "mypass" 
-server <- "127.0.0.1/postgres" 
-port <- "5432"
+dbms <- "sql server"
+user <- "polites_omop" 
+password <- "Sneaker01" 
+server <- "localhost" 
+port <- "1433"
 pathToDriver <- pathToDriver
-extraSettings <- ""
+extraSettings <- ";encrypt=false;TrustServerCertificate=True"
 
 # database schemas
-cdmDatabaseSchema <- "demo_cdm"
-resultsDatabaseSchema <- "demo_cdm_results"
-cdmSourceName <- "NACHC Test"
+cdmDatabaseSchema <- "polites_omop.dbo"                   # your omop instance
+resultsDatabaseSchema <- "polites_omop_dqd.dbo"           # instance where results will be written
+cdmSourceName <- "NACHC Test"                             # a human readable name for your CDM source
 
 # config parameters
 numThreads <- 1       # number of threads to run, 3 seems to work well on Redshift

@@ -48,7 +48,7 @@ DataQualityDashboard::executeDqChecks (
   checkLevels = checkLevels,
   tablesToExclude = tablesToExclude,
   checkNames = checkNames,
-  cdmVersion = "5.4"
+  cdmVersion = cdmVersion
 )
 
 

@@ -1,0 +1,4 @@
+checkLevel,checkName,checkDescription,kahnContext,kahnCategory,kahnSubcategory,sqlFile,evaluationFilter,severity
+TABLE,measurePersonCompleteness,This check uses a recycled checkName and runs,Verification,Conformance,Relational,_eighty-twenty.sql,cdmTableName=='OBSERVATION',fatal
+TABLE,cdmTable,This is the original cdmTable check and works as expected,Verification,Conformance,Relational,table_cdm_table.sql,cdmTableName!='',fatal
+TABLE,fooBar,This check uses a new name and does not run,Verification,Conformance,Relational,_eighty-twenty.sql,cdmTableName=='OBSERVATION',fatal
