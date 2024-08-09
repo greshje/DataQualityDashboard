@@ -28,6 +28,10 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(
   extraSettings = extraSettings 
 )
 
+print("Testing connection...")
+conn <- connect(connectionDetails = connectionDetails)
+print("Connection successfully created")
+
 # ---
 #
 # run the job

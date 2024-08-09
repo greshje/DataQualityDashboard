@@ -34,10 +34,10 @@ resultsDatabaseSchema <- "demo_cdm_results"
 cdmSourceName <- "NACHC Test"
 
 # config parameters
-numThreads <- 1       # number of threads to run, 3 seems to work well on Redshift
-sqlOnly <- FALSE      # set to TRUE if you just want to get the SQL scripts and not actually run the queries
-verboseMode <- TRUE   # set to TRUE if you want to see activity written to the console
-writeToTable <- TRUE  # set to FALSE if you want to skip writing to a SQL table in the results schema
+numThreads <- 1
+sqlOnly <- FALSE
+verboseMode <- TRUE
+writeToTable <- TRUE
 
 # dqd parameters
 checkLevels <- c("TABLE", "FIELD", "CONCEPT")
