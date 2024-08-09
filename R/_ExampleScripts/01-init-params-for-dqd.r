@@ -41,8 +41,11 @@ writeToTable <- TRUE
 
 # dqd parameters
 checkLevels <- c("TABLE", "FIELD", "CONCEPT")
-checkNames <- c("cdmTable")
 tablesToExclude <- c()
+checkNames <- c(
+  "testSuiteVersion",
+  "measurePersonCompleteness"
+)
 
 
 
